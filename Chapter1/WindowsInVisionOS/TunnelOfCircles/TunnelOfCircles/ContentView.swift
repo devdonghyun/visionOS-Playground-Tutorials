@@ -16,10 +16,13 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            ForEach(0..<4) { index in
-                Circle()
-                    .stroke(lineWidth: 30)
-                    .foregroundStyle(colors[index % 2])
+            ZStack {
+                ForEach(0..<4) { index in
+                    Circle()
+                        .stroke(lineWidth: 30)
+                        .foregroundStyle(colors[index % 2])
+                        .frame(height: minDiameter + diameterChange * Double(index))
+                }
             }
             Grid {
                 GridRow {
