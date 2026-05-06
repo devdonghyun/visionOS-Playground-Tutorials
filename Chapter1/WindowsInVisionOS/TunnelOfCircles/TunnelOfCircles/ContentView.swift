@@ -16,7 +16,10 @@ struct ContentView: View {
     let diameterChange = 70.0
     
     var body: some View {
-        VStack {
+        VStack(spacing: 40) {
+            Text("Tunnel of Circles")
+                .font(.largeTitle)
+                .padding()
             ZStack {
                 ForEach(0..<4) { index in
                     Circle()
@@ -26,6 +29,7 @@ struct ContentView: View {
                         .padding3D(.back, depth)
                 }
             }
+            .padding(.bottom, 30)
             Grid {
                 GridRow {
                     Text("Depth")
@@ -43,9 +47,13 @@ struct ContentView: View {
                     }.labelsHidden()
                 }
             }
+            .padding(30)
+            .background(.thickMaterial)
+            .frame(maxWidth: 320)
             
         }
-        .padding()
+        .frame(minHeight: 560)
+        
     }
 }
 
