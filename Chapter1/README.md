@@ -1,8 +1,8 @@
 # 🧠 visionOS Playground Tutorials
 
-![Platform](https://camo.githubusercontent.com/0492e679dfe25d2b251ae68bded264c44f8c85f8c1aefddc680ce1b161725bc2/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f706c6174666f726d2d766973696f6e4f532d626c7565)
-![Language](https://camo.githubusercontent.com/ab491a836e0e9ee194aa028f997ec1073129a34d710a18602bf1311ba560a849/68747470733a2f2f696d672e736869656c64732e696f2f62616467652d53776966742d6f72616e6765)
-![Framework](https://camo.githubusercontent.com/51e35b50d73bf68bca372ae0983f3acc7631d3c5fbbb3e0271511b6b421e5bb0/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6672616d65776f726b2d537769667455492d677265656e)
+![Platform](https://img.shields.io/badge/Platform-visionOS-blue)
+![Language](https://img.shields.io/badge/Language-Swift-orange?style=flat&logo=swift&logoColor=white)
+![Framework](https://img.shields.io/badge/Framework-SwiftUI-green)
 
 ---
 
