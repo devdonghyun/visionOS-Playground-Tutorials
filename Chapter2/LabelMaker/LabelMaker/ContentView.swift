@@ -10,8 +10,11 @@ import RealityKit
 import RealityKitContent
 
 struct ContentView: View {
+    @State private var label = Label()
+    
     var body: some View {
-        LabelView()
+        LabelView(label: $label)
+            .padding()
     }
 }
 
