@@ -13,5 +13,14 @@ struct LabelMakerApp: App {
         WindowGroup {
             ContentView()
         }
+        .windowResizability(.contentSize)
+        
+        WindowGroup(for: Label.self) { $label in
+            LabelView(label: $label)
+        } defaultValue: {
+            Label(text: "", cornerRadius: 20.0 )
+        }
+        .windowResizability(.contentSize)
+        .windowStyle(.plain)
     }
 }
