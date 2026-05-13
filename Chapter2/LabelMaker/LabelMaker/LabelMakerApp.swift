@@ -17,6 +17,7 @@ struct LabelMakerApp: App {
         
         WindowGroup(for: Label.self) { $label in
             LabelView(label: $label)
+                .disabled(true)
         } defaultValue: {
             Label(text: "", cornerRadius: 20.0 )
         }
