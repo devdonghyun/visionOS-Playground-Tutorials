@@ -14,7 +14,7 @@ struct LabelView: View {
         TextField("Type to enter Text", text: $label.text, axis: .vertical)
             .frame(width: 500, height: 500)
             .padding()
-            .background(.blue, in: RoundedRectangle(cornerRadius: label.cornerRadius))
+            .background(label.selectedColor(), in: RoundedRectangle(cornerRadius: label.cornerRadius))
             .foregroundStyle(.black)
             .font(.system(size: 40, weight: .semibold))
             .multilineTextAlignment(.center)

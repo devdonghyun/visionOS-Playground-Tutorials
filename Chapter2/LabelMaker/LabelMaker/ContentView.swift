@@ -20,6 +20,15 @@ struct ContentView: View {
                 HStack(spacing: 30) {
                     Slider(value: $label.cornerRadius, in: 0...100)
                         .frame(width: 100)
+                    
+                    HStack(spacing: 10) {
+                        ForEach(Label.colors.indices, id: \.self) {
+                            index in ColorButton(color: Label.colors[index]) {
+                                label.colorIndex = index
+                            }
+                        }
+                    }
+                    
                     Button("Create") {
                         openWindow(value: label)
                         label = Label()
