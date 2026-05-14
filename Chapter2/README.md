@@ -6,7 +6,7 @@
 
 ---
 
-# Chapter 3 - Navigation
+# Chapter 2 - Ornaments And MultipleWindows
 
 ## 📌 Summary (요약)
 
